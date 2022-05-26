@@ -13,6 +13,7 @@ console.log('Valoarea este: ' + value);
 // }
 
 value = Number(value);
+number = Number(number);
 
 // if (isNaN(value) === true) {
 //   message = 'Nu ai introdus un numar.';
