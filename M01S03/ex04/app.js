@@ -6,3 +6,8 @@ console.log(myArray[2].toString());
 console.log(myArray.length);
 console.log((myArray[0] + myArray[4]).toString());
 console.log(myArray[1].toString());
+console.log(myArray[1].toString());
+console.log(myArray[3].toString());
+console.log((myArray.length - myArray[5]).toString());
+console.log(myArray[3] - myArray[4]);
+console.log(Math.pow(myArray[5], myArray[3]));

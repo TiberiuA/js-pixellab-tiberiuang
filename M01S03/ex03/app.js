@@ -28,56 +28,53 @@ var andra = {
   friends: {},
 };
 
-// prietenii sunt prieteni pe friends ai lui person
+console.warn(`prietenii sunt prieteni pe friends ai lui person`);
 person.friends.larry = larry;
 person.friends.steven = steven;
 person.friends.andra = andra;
-
+// reverse
 larry.friends.person = person;
 steven.friends.person = person;
 andra.friends.person = person;
 
-console.warn(`Seteaza-l pe Steven ca prieten al lui Larry si al Andrei (si invers).
-`);
+console.warn(
+  `2 Seteaza-l pe Steven ca prieten al lui Larry si al Andrei (si invers).`,
+);
 steven.friends.larry = larry;
 steven.friends.andra = andra;
-
 // reverse
 larry.friends.steven = steven;
 andra.friends.steven = steven;
 
-console.warn(`Seteaz-o pe Carol ca prietena a Andrei (si invers).
-`);
+console.warn(`3 Seteaz-o pe Carol ca prietena a Andrei (si invers).`);
 carol.friends.andra = andra;
 andra.friends.carol = carol;
 
+console.warn(
+  `4 Folosind keywordul delete sterge prietenia dintre Person si Larry (si invers).`,
+);
 delete person.friends.larry;
 delete larry.friends.person;
 
-console.warn(`
-Afiseaza numele complet al lui Person folosind obiectul Larry.
-`);
-
+console.warn(
+  `5 Afiseaza numele complet al lui Person folosind obiectul Larry.`,
+);
 console.log(
   larry.friends.steven.friends.person.name +
     ' ' +
     larry.friends.steven.friends.person.surname,
 );
 
-console.warn(`
-Afiseaza numele complet a lui Larry folosind obiectul Person.
-`);
-
+console.warn(`6 Afiseaza numele complet a lui Larry folosind obiectul Person.`);
 console.log(
   person.friends.steven.friends.larry.name +
     ' ' +
     person.friends.steven.friends.larry.surname,
 );
 
-console.warn(`
-Folosind obiectul Carol afiseaza numele complet al lui Persons.
-`);
-
+console.warn(
+  `7 Folosind obiectul Carol afiseaza numele complet al lui Persons.`,
+);
 console.log(
   carol.friends.andra.friends.person.name +
     ' ' +
@@ -85,10 +82,8 @@ console.log(
 );
 
 console.warn(`
-Folosind obiectul Andra afiseaza numarul total de caractere
-al numelui complet al lui Person.
-`);
-
+8 Folosind obiectul Andra afiseaza numarul total de caractere
+al numelui complet al lui Person.`);
 console.log(
   (andra.friends.person.name + andra.friends.person.surname).length.toString(),
 );
