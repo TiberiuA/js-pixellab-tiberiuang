@@ -1,8 +1,7 @@
 var defaultNumber = 2;
-var defaultWarningMessage = `Nu ai introdus un numar. Folosesc ${defaultNumber}`;
+var defaultWarningNumber = `Nu ai introdus un numar. Folosesc ${defaultNumber}`;
 
-var i;
-var number = prompt('Introdu un numar');
+var number = prompt('Introdu un numar.');
 number = number.trim();
 
 if (number === null || number.trim().length === 0) {
@@ -13,11 +12,11 @@ if (number === null || number.trim().length === 0) {
 }
 
 if (isNaN(number) === true) {
-  console.warn(defaultWarningMessage);
+  console.warn(defaultWarningNumber);
   number = defaultNumber;
 }
 
-for (i = 6; i <= 100; i++) {
+for (i = 1; i <= maxNumber; i++) {
   console.log(i);
 
   if (i % number !== 0) {

@@ -20,7 +20,16 @@ var person = {
   ],
 };
 
-console.warn(`In mod similar, afiseaza skillurile care NU incep cu j.`);
+console.warn(
+  `1. Folosind obiectul person si un for, afiseaza in consola skillurile de pe pozitiile pare ale arrayului.`,
+);
+for (var i = 0; i < person.skills.length; i++) {
+  if (i % 2 === 0) {
+    console.log(person.skills[i]);
+  }
+}
+
+console.warn(`2. In mod similar, afiseaza skillurile care NU incep cu j.`);
 for (var i = 0; i < person.skills.length; i++) {
   var skill = person.skills[i];
 
@@ -30,7 +39,7 @@ for (var i = 0; i < person.skills.length; i++) {
 }
 
 console.warn(
-  ` Folosind un for afiseaza propozitia: "Prietenii mei se numesc: xxx yyy, xxx yyy, xxx yyy."`,
+  `3. Folosind un for afiseaza propozitia: "Prietenii mei se numesc: xxx yyy, xxx yyy, xxx yyy."`,
 );
 var message = 'Prietenii mei se numesc: ';
 for (var i = 0; i < person.friends.length; i++) {
@@ -46,7 +55,18 @@ for (var i = 0; i < person.friends.length; i++) {
 }
 console.log(message);
 
-console.warn(` Afiseaza diferenta de varsta dintre
+console.warn(`
+4. Folosind un for, afiseaza numarul total de ani pe care il au persoanele din arrayul friends, doar daca varsta este mai mare sau egala cu 30 de ani.
+`);
+var sum = 0;
+for (var i = 0; i <= person.friends.length; i++) {
+  if (person.friends[i].age >= 30) {
+    sum += person.friends[i].age;
+    console.log(sum.toString());
+  }
+}
+
+console.warn(`6. Afiseaza diferenta de varsta dintre
 persoana si prietenii din arrayul friends
 doar daca aceasta este mai mare de 2 ani.`);
 for (var i = 0; i < person.friends.length; i++) {
