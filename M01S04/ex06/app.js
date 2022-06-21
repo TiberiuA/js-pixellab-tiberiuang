@@ -58,10 +58,12 @@ console.log(message);
 console.warn(`
 4. Folosind un for, afiseaza numarul total de ani pe care il au persoanele din arrayul friends, doar daca varsta este mai mare sau egala cu 30 de ani.
 `);
-var sum = 0;
+
 for (var i = 0; i <= person.friends.length; i++) {
-  if (person.friends[i].age >= 30) {
-    sum += person.friends[i].age;
+  var sum = 0;
+  var friend = person.friends[i];
+  if (friend.age >= 30) {
+    sum += friend.age;
     console.log(sum.toString());
   }
 }
