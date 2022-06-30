@@ -21,6 +21,7 @@ class Car {
     this.carBody = document.createElement('div');
     this.carBody.classList.add('car__body');
     this.car.append(this.carBody);
+    this.carBody.style.backgroundColor = this.color;
 
     this.lightBack = document.createElement('div');
     this.lightBack.classList.add('light', 'light--back');
