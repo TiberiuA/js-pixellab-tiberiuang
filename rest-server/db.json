@@ -1,3 +1,19 @@
 {
-  "persons": []
+  "persons": [
+    {
+      "name": "Dragos",
+      "surname": "Iordache",
+      "skills": [
+        "html",
+        "css",
+        "js"
+      ]
+    },
+    {
+      "id": 1658430898867,
+      "name": "a",
+      "surname": "b",
+      "skills": []
+    }
+  ]
 }
